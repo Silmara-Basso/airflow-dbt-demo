@@ -1,0 +1,3 @@
+[harlequin.adapter]
+postgres=harlequin_postgres:HarlequinPostgresAdapter
+
