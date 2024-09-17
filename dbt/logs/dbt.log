@@ -1245,3 +1245,469 @@ truncate table "*****"."public"."raw_payments"
 [0m20:08:02.636607 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m20:08:02.636775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10418a4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103393140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050750a0>]}
 [0m20:08:02.636941 [debug] [MainThread]: Flushing usage events
+[0m10:07:39.039097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053aa540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d98560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10600fc80>]}
+
+
+============================== 10:07:39.043597 | fa846450-7d1b-4997-91b3-ce1c12eb6a48 ==============================
+[0m10:07:39.043597 [info ] [MainThread]: Running with dbt=1.8.0
+[0m10:07:39.043927 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt/logs', 'debug': 'False', 'profiles_dir': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:07:39.064163 [info ] [MainThread]: dbt version: 1.8.0
+[0m10:07:39.064382 [info ] [MainThread]: python version: 3.12.1
+[0m10:07:39.064519 [info ] [MainThread]: python path: /Users/silmarabasso/.pyenv/versions/3.12.1/bin/python
+[0m10:07:39.064648 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m10:07:39.068597 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_HOST'
+[0m10:07:39.078014 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.08567954, "process_user_time": 0.670201, "process_kernel_time": 0.221209, "process_mem_max_rss": "94765056", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:07:39.078386 [debug] [MainThread]: Command `dbt debug` failed at 10:07:39.078340 after 0.09 seconds
+[0m10:07:39.078566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10340cef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10603a6c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105852f60>]}
+[0m10:07:39.078734 [debug] [MainThread]: Flushing usage events
+[0m10:11:35.540364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071afda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051d47d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051d51c0>]}
+
+
+============================== 10:11:35.542883 | b904bfa1-3c67-4d86-8fac-54018a04b3b4 ==============================
+[0m10:11:35.542883 [info ] [MainThread]: Running with dbt=1.8.0
+[0m10:11:35.543182 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m10:11:35.564625 [info ] [MainThread]: dbt version: 1.8.0
+[0m10:11:35.564892 [info ] [MainThread]: python version: 3.12.1
+[0m10:11:35.565035 [info ] [MainThread]: python path: /Users/silmarabasso/.pyenv/versions/3.12.1/bin/python
+[0m10:11:35.565166 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m10:11:35.858100 [info ] [MainThread]: Using profiles dir at /Users/silmarabasso/repos/airflow-dbt-demo/dbt
+[0m10:11:35.858464 [info ] [MainThread]: Using profiles.yml file at /Users/silmarabasso/repos/airflow-dbt-demo/dbt/profiles.yml
+[0m10:11:35.858644 [info ] [MainThread]: Using dbt_project.yml file at /Users/silmarabasso/repos/airflow-dbt-demo/dbt/dbt_project.yml
+[0m10:11:35.859650 [info ] [MainThread]: adapter type: *****
+[0m10:11:35.859818 [info ] [MainThread]: adapter version: 1.8.2
+[0m10:11:35.897827 [info ] [MainThread]: Configuration:
+[0m10:11:35.898149 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:11:35.898294 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:11:35.898434 [info ] [MainThread]: Required dependencies:
+[0m10:11:35.898964 [debug] [MainThread]: Executing "git --help"
+[0m10:11:35.932895 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:11:35.933378 [debug] [MainThread]: STDERR: "b''"
+[0m10:11:35.933553 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:11:35.933723 [info ] [MainThread]: Connection:
+[0m10:11:35.933873 [info ] [MainThread]:   host: *****
+[0m10:11:35.933992 [info ] [MainThread]:   port: 5432
+[0m10:11:35.934111 [info ] [MainThread]:   user: *****
+[0m10:11:35.934222 [info ] [MainThread]:   database: *****
+[0m10:11:35.934333 [info ] [MainThread]:   schema: db_sil
+[0m10:11:35.934448 [info ] [MainThread]:   connect_timeout: 10
+[0m10:11:35.934563 [info ] [MainThread]:   role: None
+[0m10:11:35.934672 [info ] [MainThread]:   search_path: None
+[0m10:11:35.934784 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:11:35.934894 [info ] [MainThread]:   sslmode: None
+[0m10:11:35.935001 [info ] [MainThread]:   sslcert: None
+[0m10:11:35.935112 [info ] [MainThread]:   sslkey: None
+[0m10:11:35.935220 [info ] [MainThread]:   sslrootcert: None
+[0m10:11:35.935328 [info ] [MainThread]:   application_name: dbt
+[0m10:11:35.935436 [info ] [MainThread]:   retries: 1
+[0m10:11:35.935736 [info ] [MainThread]: Registered adapter: *****=1.8.2
+[0m10:11:35.947185 [debug] [MainThread]: Acquiring new ***** connection 'debug'
+[0m10:11:36.067999 [debug] [MainThread]: Using ***** connection "debug"
+[0m10:11:36.068205 [debug] [MainThread]: On debug: select 1 as id
+[0m10:11:36.068325 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:11:36.098812 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a ***** connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "*****" to address: nodename nor servname provided, or not known
+
+[0m10:11:36.101568 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m10:11:36.101811 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m10:11:36.101989 [debug] [MainThread]: On debug: No close available on handle
+[0m10:11:36.102180 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m10:11:36.102355 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:11:36.102498 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "*****" to address: nodename nor servname provided, or not known
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m10:11:36.103650 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.60479873, "process_user_time": 0.599555, "process_kernel_time": 0.150954, "process_mem_max_rss": "105070592", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:11:36.104048 [debug] [MainThread]: Command `dbt debug` failed at 10:11:36.103990 after 0.61 seconds
+[0m10:11:36.104253 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:11:36.104436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1025b6c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065c0320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107102a80>]}
+[0m10:11:36.104644 [debug] [MainThread]: Flushing usage events
+[0m10:14:50.280155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fc3530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106223fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106223a10>]}
+
+
+============================== 10:14:50.283135 | 95483ba9-8b59-4e13-8765-ae7b9bc4258b ==============================
+[0m10:14:50.283135 [info ] [MainThread]: Running with dbt=1.8.0
+[0m10:14:50.283418 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt/logs', 'debug': 'False', 'profiles_dir': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:14:50.300062 [info ] [MainThread]: dbt version: 1.8.0
+[0m10:14:50.300441 [info ] [MainThread]: python version: 3.12.1
+[0m10:14:50.300610 [info ] [MainThread]: python path: /Users/silmarabasso/.pyenv/versions/3.12.1/bin/python
+[0m10:14:50.300742 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m10:14:50.353017 [info ] [MainThread]: Using profiles dir at /Users/silmarabasso/repos/airflow-dbt-demo/dbt
+[0m10:14:50.353309 [info ] [MainThread]: Using profiles.yml file at /Users/silmarabasso/repos/airflow-dbt-demo/dbt/profiles.yml
+[0m10:14:50.353456 [info ] [MainThread]: Using dbt_project.yml file at /Users/silmarabasso/repos/airflow-dbt-demo/dbt/dbt_project.yml
+[0m10:14:50.353893 [info ] [MainThread]: adapter type: *****
+[0m10:14:50.354031 [info ] [MainThread]: adapter version: 1.8.2
+[0m10:14:50.386543 [info ] [MainThread]: Configuration:
+[0m10:14:50.386779 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:14:50.386919 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:14:50.387054 [info ] [MainThread]: Required dependencies:
+[0m10:14:50.387458 [debug] [MainThread]: Executing "git --help"
+[0m10:14:50.419585 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:14:50.420058 [debug] [MainThread]: STDERR: "b''"
+[0m10:14:50.420220 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:14:50.420378 [info ] [MainThread]: Connection:
+[0m10:14:50.420553 [info ] [MainThread]:   host: ocalhost
+[0m10:14:50.420681 [info ] [MainThread]:   port: 5432
+[0m10:14:50.420810 [info ] [MainThread]:   user: *****
+[0m10:14:50.420932 [info ] [MainThread]:   database: *****
+[0m10:14:50.421055 [info ] [MainThread]:   schema: db_sil
+[0m10:14:50.421176 [info ] [MainThread]:   connect_timeout: 10
+[0m10:14:50.421302 [info ] [MainThread]:   role: None
+[0m10:14:50.421421 [info ] [MainThread]:   search_path: None
+[0m10:14:50.421541 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:14:50.421666 [info ] [MainThread]:   sslmode: None
+[0m10:14:50.421784 [info ] [MainThread]:   sslcert: None
+[0m10:14:50.421904 [info ] [MainThread]:   sslkey: None
+[0m10:14:50.422023 [info ] [MainThread]:   sslrootcert: None
+[0m10:14:50.422143 [info ] [MainThread]:   application_name: dbt
+[0m10:14:50.422263 [info ] [MainThread]:   retries: 1
+[0m10:14:50.422563 [info ] [MainThread]: Registered adapter: *****=1.8.2
+[0m10:14:50.425568 [debug] [MainThread]: Acquiring new ***** connection 'debug'
+[0m10:14:50.496140 [debug] [MainThread]: Using ***** connection "debug"
+[0m10:14:50.496334 [debug] [MainThread]: On debug: select 1 as id
+[0m10:14:50.496455 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:14:50.640147 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a ***** connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "ocalhost" to address: nodename nor servname provided, or not known
+
+[0m10:14:50.644199 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m10:14:50.644475 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m10:14:50.644737 [debug] [MainThread]: On debug: No close available on handle
+[0m10:14:50.645070 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m10:14:50.645376 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:14:50.645641 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "ocalhost" to address: nodename nor servname provided, or not known
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m10:14:50.647938 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.40864125, "process_user_time": 0.582675, "process_kernel_time": 0.139309, "process_mem_max_rss": "103088128", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:14:50.648564 [debug] [MainThread]: Command `dbt debug` failed at 10:14:50.648466 after 0.41 seconds
+[0m10:14:50.648899 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:14:50.649208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043d4200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1024bac60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061f4590>]}
+[0m10:14:50.649565 [debug] [MainThread]: Flushing usage events
+[0m10:18:37.583750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11274e870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111284620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1128d3f80>]}
+
+
+============================== 10:18:37.586580 | 5d51873b-5986-4b42-a8a9-ce39ba977da2 ==============================
+[0m10:18:37.586580 [info ] [MainThread]: Running with dbt=1.8.0
+[0m10:18:37.586879 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:18:37.598568 [info ] [MainThread]: dbt version: 1.8.0
+[0m10:18:37.598777 [info ] [MainThread]: python version: 3.12.1
+[0m10:18:37.598916 [info ] [MainThread]: python path: /Users/silmarabasso/.pyenv/versions/3.12.1/bin/python
+[0m10:18:37.599056 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m10:18:37.647747 [info ] [MainThread]: Using profiles dir at /Users/silmarabasso/repos/airflow-dbt-demo/dbt
+[0m10:18:37.647994 [info ] [MainThread]: Using profiles.yml file at /Users/silmarabasso/repos/airflow-dbt-demo/dbt/profiles.yml
+[0m10:18:37.648135 [info ] [MainThread]: Using dbt_project.yml file at /Users/silmarabasso/repos/airflow-dbt-demo/dbt/dbt_project.yml
+[0m10:18:37.648634 [info ] [MainThread]: adapter type: *****
+[0m10:18:37.648775 [info ] [MainThread]: adapter version: 1.8.2
+[0m10:18:37.682408 [info ] [MainThread]: Configuration:
+[0m10:18:37.682673 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:18:37.682817 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:18:37.682952 [info ] [MainThread]: Required dependencies:
+[0m10:18:37.683348 [debug] [MainThread]: Executing "git --help"
+[0m10:18:37.706823 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:18:37.707375 [debug] [MainThread]: STDERR: "b''"
+[0m10:18:37.707563 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:18:37.707737 [info ] [MainThread]: Connection:
+[0m10:18:37.707912 [info ] [MainThread]:   host: localhost
+[0m10:18:37.708042 [info ] [MainThread]:   port: 5432
+[0m10:18:37.708171 [info ] [MainThread]:   user: *****
+[0m10:18:37.708294 [info ] [MainThread]:   database: *****
+[0m10:18:37.708415 [info ] [MainThread]:   schema: db_sil
+[0m10:18:37.708530 [info ] [MainThread]:   connect_timeout: 10
+[0m10:18:37.708652 [info ] [MainThread]:   role: None
+[0m10:18:37.708771 [info ] [MainThread]:   search_path: None
+[0m10:18:37.708889 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:18:37.709007 [info ] [MainThread]:   sslmode: None
+[0m10:18:37.709120 [info ] [MainThread]:   sslcert: None
+[0m10:18:37.709237 [info ] [MainThread]:   sslkey: None
+[0m10:18:37.709360 [info ] [MainThread]:   sslrootcert: None
+[0m10:18:37.709473 [info ] [MainThread]:   application_name: dbt
+[0m10:18:37.709584 [info ] [MainThread]:   retries: 1
+[0m10:18:37.709907 [info ] [MainThread]: Registered adapter: *****=1.8.2
+[0m10:18:37.713266 [debug] [MainThread]: Acquiring new ***** connection 'debug'
+[0m10:18:37.780543 [debug] [MainThread]: Using ***** connection "debug"
+[0m10:18:37.780799 [debug] [MainThread]: On debug: select 1 as id
+[0m10:18:37.780927 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:18:37.798270 [debug] [MainThread]: SQL status: SELECT 1 in 0.017 seconds
+[0m10:18:37.798815 [debug] [MainThread]: On debug: Close
+[0m10:18:37.798980 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:18:37.799150 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:18:37.800057 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.25580588, "process_user_time": 0.577368, "process_kernel_time": 0.134943, "process_mem_max_rss": "111656960", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:18:37.800405 [debug] [MainThread]: Command `dbt debug` succeeded at 10:18:37.800352 after 0.26 seconds
+[0m10:18:37.800568 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:18:37.800721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ccede0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11274e870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11274d730>]}
+[0m10:18:37.800898 [debug] [MainThread]: Flushing usage events
+[0m10:19:34.038029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102d127e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10471fec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104744110>]}
+
+
+============================== 10:19:34.041157 | 858bad20-5d6a-46f0-a1cb-45f6c03b3123 ==============================
+[0m10:19:34.041157 [info ] [MainThread]: Running with dbt=1.8.0
+[0m10:19:34.041452 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt/logs', 'debug': 'False', 'profiles_dir': '/Users/silmarabasso/repos/airflow-dbt-demo/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt --no-write-json seed', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:19:34.155988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10481aa20>]}
+[0m10:19:34.175624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1035d4c50>]}
+[0m10:19:34.176206 [info ] [MainThread]: Registered adapter: *****=1.8.2
+[0m10:19:34.185319 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m10:19:34.227983 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m10:19:34.228335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103cb5a90>]}
+[0m10:19:34.793070 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m10:19:34.793358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052ff710>]}
+[0m10:19:34.830827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111eebe60>]}
+[0m10:19:34.852812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e06510>]}
+[0m10:19:34.853025 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 417 macros
+[0m10:19:34.853180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e62d80>]}
+[0m10:19:34.854372 [info ] [MainThread]: 
+[0m10:19:34.854627 [debug] [MainThread]: Acquiring new ***** connection 'master'
+[0m10:19:34.856106 [debug] [ThreadPool]: Acquiring new ***** connection 'list_*****'
+[0m10:19:34.951714 [debug] [ThreadPool]: Using ***** connection "list_*****"
+[0m10:19:34.951955 [debug] [ThreadPool]: On list_*****: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_*****"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m10:19:34.952084 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:19:34.965987 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.014 seconds
+[0m10:19:34.966679 [debug] [ThreadPool]: On list_*****: Close
+[0m10:19:34.967487 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_*****, now list_*****_db_sil)
+[0m10:19:34.970341 [debug] [ThreadPool]: Using ***** connection "list_*****_db_sil"
+[0m10:19:34.970531 [debug] [ThreadPool]: On list_*****_db_sil: BEGIN
+[0m10:19:34.970669 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:19:34.975124 [debug] [ThreadPool]: SQL status: BEGIN in 0.004 seconds
+[0m10:19:34.975336 [debug] [ThreadPool]: Using ***** connection "list_*****_db_sil"
+[0m10:19:34.975471 [debug] [ThreadPool]: On list_*****_db_sil: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_*****_db_sil"} */
+select
+      '*****' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'db_sil'
+    union all
+    select
+      '*****' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'db_sil'
+    union all
+    select
+      '*****' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'db_sil'
+  
+[0m10:19:34.977555 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.002 seconds
+[0m10:19:34.978177 [debug] [ThreadPool]: On list_*****_db_sil: ROLLBACK
+[0m10:19:34.978666 [debug] [ThreadPool]: On list_*****_db_sil: Close
+[0m10:19:34.981268 [debug] [MainThread]: Using ***** connection "master"
+[0m10:19:34.981466 [debug] [MainThread]: On master: BEGIN
+[0m10:19:34.981585 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:19:34.986013 [debug] [MainThread]: SQL status: BEGIN in 0.004 seconds
+[0m10:19:34.986266 [debug] [MainThread]: Using ***** connection "master"
+[0m10:19:34.986444 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m10:19:34.990787 [debug] [MainThread]: SQL status: SELECT 3 in 0.004 seconds
+[0m10:19:34.991621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c7e960>]}
+[0m10:19:34.991831 [debug] [MainThread]: On master: ROLLBACK
+[0m10:19:34.992420 [debug] [MainThread]: Using ***** connection "master"
+[0m10:19:34.992583 [debug] [MainThread]: On master: BEGIN
+[0m10:19:34.993361 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m10:19:34.993506 [debug] [MainThread]: On master: COMMIT
+[0m10:19:34.993644 [debug] [MainThread]: Using ***** connection "master"
+[0m10:19:34.993765 [debug] [MainThread]: On master: COMMIT
+[0m10:19:34.994305 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m10:19:34.994477 [debug] [MainThread]: On master: Close
+[0m10:19:34.994698 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:19:34.994867 [info ] [MainThread]: 
+[0m10:19:34.996497 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_customers
+[0m10:19:34.996741 [info ] [Thread-1 (]: 1 of 3 START seed file db_sil.raw_customers .................................... [RUN]
+[0m10:19:34.996965 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_*****_db_sil, now seed.jaffle_shop.raw_customers)
+[0m10:19:34.997231 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_customers
+[0m10:19:34.997380 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_customers
+[0m10:19:35.012057 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_customers"
+[0m10:19:35.012285 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: BEGIN
+[0m10:19:35.012425 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:35.017465 [debug] [Thread-1 (]: SQL status: BEGIN in 0.005 seconds
+[0m10:19:35.017806 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_customers"
+[0m10:19:35.017996 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "seed.jaffle_shop.raw_customers"} */
+truncate table "*****"."db_sil"."raw_customers"
+[0m10:19:35.020259 [debug] [Thread-1 (]: SQL status: TRUNCATE TABLE in 0.002 seconds
+[0m10:19:35.045533 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_customers"
+[0m10:19:35.045819 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: 
+          insert into "*****"."db_sil"."raw_customers" ("id", "first_name", "last_name") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s...
+[0m10:19:35.047054 [debug] [Thread-1 (]: SQL status: INSERT 0 100 in 0.001 seconds
+[0m10:19:35.049597 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_customers"
+[0m10:19:35.057111 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: COMMIT
+[0m10:19:35.057299 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_customers"
+[0m10:19:35.057440 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: COMMIT
+[0m10:19:35.058455 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m10:19:35.059167 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: Close
+[0m10:19:35.059783 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103cb6e10>]}
+[0m10:19:35.059999 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file db_sil.raw_customers ................................ [[32mINSERT 100[0m in 0.06s]
+[0m10:19:35.060264 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_customers
+[0m10:19:35.060450 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_orders
+[0m10:19:35.060703 [info ] [Thread-1 (]: 2 of 3 START seed file db_sil.raw_orders ....................................... [RUN]
+[0m10:19:35.060911 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_customers, now seed.jaffle_shop.raw_orders)
+[0m10:19:35.061066 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_orders
+[0m10:19:35.061210 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_orders
+[0m10:19:35.064609 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_orders"
+[0m10:19:35.064757 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: BEGIN
+[0m10:19:35.064879 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:35.068967 [debug] [Thread-1 (]: SQL status: BEGIN in 0.004 seconds
+[0m10:19:35.069201 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_orders"
+[0m10:19:35.069367 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "seed.jaffle_shop.raw_orders"} */
+truncate table "*****"."db_sil"."raw_orders"
+[0m10:19:35.071010 [debug] [Thread-1 (]: SQL status: TRUNCATE TABLE in 0.002 seconds
+[0m10:19:35.092939 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_orders"
+[0m10:19:35.093122 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: 
+          insert into "*****"."db_sil"."raw_orders" ("id", "user_id", "order_date", "status") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%...
+[0m10:19:35.094521 [debug] [Thread-1 (]: SQL status: INSERT 0 99 in 0.001 seconds
+[0m10:19:35.094772 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_orders"
+[0m10:19:35.096192 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: COMMIT
+[0m10:19:35.096334 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_orders"
+[0m10:19:35.096456 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: COMMIT
+[0m10:19:35.097345 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m10:19:35.097658 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: Close
+[0m10:19:35.097893 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e78e60>]}
+[0m10:19:35.098115 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file db_sil.raw_orders ................................... [[32mINSERT 99[0m in 0.04s]
+[0m10:19:35.098370 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_orders
+[0m10:19:35.098552 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_payments
+[0m10:19:35.098779 [info ] [Thread-1 (]: 3 of 3 START seed file db_sil.raw_payments ..................................... [RUN]
+[0m10:19:35.098956 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_orders, now seed.jaffle_shop.raw_payments)
+[0m10:19:35.099101 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_payments
+[0m10:19:35.099240 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_payments
+[0m10:19:35.102390 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_payments"
+[0m10:19:35.102529 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: BEGIN
+[0m10:19:35.102658 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:35.106710 [debug] [Thread-1 (]: SQL status: BEGIN in 0.004 seconds
+[0m10:19:35.106942 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_payments"
+[0m10:19:35.107090 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "seed.jaffle_shop.raw_payments"} */
+truncate table "*****"."db_sil"."raw_payments"
+[0m10:19:35.108923 [debug] [Thread-1 (]: SQL status: TRUNCATE TABLE in 0.002 seconds
+[0m10:19:35.133788 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_payments"
+[0m10:19:35.134016 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: 
+          insert into "*****"."db_sil"."raw_payments" ("id", "order_id", "payment_method", "amount") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s...
+[0m10:19:35.135284 [debug] [Thread-1 (]: SQL status: INSERT 0 113 in 0.001 seconds
+[0m10:19:35.135532 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_payments"
+[0m10:19:35.137402 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: COMMIT
+[0m10:19:35.137538 [debug] [Thread-1 (]: Using ***** connection "seed.jaffle_shop.raw_payments"
+[0m10:19:35.137662 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: COMMIT
+[0m10:19:35.138690 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m10:19:35.138943 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: Close
+[0m10:19:35.139161 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '858bad20-5d6a-46f0-a1cb-45f6c03b3123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111ecc8c0>]}
+[0m10:19:35.139395 [info ] [Thread-1 (]: 3 of 3 OK loaded seed file db_sil.raw_payments ................................. [[32mINSERT 113[0m in 0.04s]
+[0m10:19:35.139649 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_payments
+[0m10:19:35.140200 [debug] [MainThread]: Using ***** connection "master"
+[0m10:19:35.140363 [debug] [MainThread]: On master: BEGIN
+[0m10:19:35.140488 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:19:35.143580 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m10:19:35.143750 [debug] [MainThread]: On master: COMMIT
+[0m10:19:35.143879 [debug] [MainThread]: Using ***** connection "master"
+[0m10:19:35.143991 [debug] [MainThread]: On master: COMMIT
+[0m10:19:35.144370 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m10:19:35.144498 [debug] [MainThread]: On master: Close
+[0m10:19:35.144685 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:19:35.144805 [debug] [MainThread]: Connection 'seed.jaffle_shop.raw_payments' was properly closed.
+[0m10:19:35.144951 [info ] [MainThread]: 
+[0m10:19:35.145097 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 0.29 seconds (0.29s).
+[0m10:19:35.145496 [debug] [MainThread]: Command end result
+[0m10:19:35.145629 [info ] [MainThread]: 
+[0m10:19:35.145794 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:19:35.145925 [info ] [MainThread]: 
+[0m10:19:35.146062 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m10:19:35.147476 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 1.1454604, "process_user_time": 1.32579, "process_kernel_time": 0.17344, "process_mem_max_rss": "127352832", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:19:35.147758 [debug] [MainThread]: Command `dbt seed` succeeded at 10:19:35.147718 after 1.15 seconds
+[0m10:19:35.147940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047444a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c67b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cc0fb0>]}
+[0m10:19:35.148091 [debug] [MainThread]: Flushing usage events
