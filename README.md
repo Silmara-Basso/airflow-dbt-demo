@@ -48,3 +48,5 @@ Each dbt model is run as a bash command.
 - If you make changes to the dbt project, you will need to run `dbt compile` in order to update the `manifest.json` file.
 This may be done manually during development, as part of a CI/CD pipeline, or as a separate step in a production pipeline
 run *before* the Airflow DAG is triggered.
+- To destroy the lab environment use `astro dev kill`
+
