@@ -1,4 +1,4 @@
-### Aiflow Schedule lab
+# Aiflow Schedule lab
 
 In this lab I loaded data from some files into PostgreSQL scheduled via Airflow (Astro) using BashOperator and Cosmos.
 I didn't start from scratch, I used [this repository](https://github.com/astronomer/airflow-dbt-demo) from Astronomer itself
@@ -21,7 +21,7 @@ This may be done manually during development, as part of a CI/CD pipeline, or as
 run *before* the Airflow DAG is triggered.
 
 Final result after a few attempts
-![AirFlow Dags](./images/Airflow.png)
+![AirFlow Dags](./images/Arflow.png)
 
 I used harlequin to view persisted data in Postgre
 'pip install harlequin-postgres'
