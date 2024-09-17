@@ -40,7 +40,7 @@ I used harlequin to view persisted data in Postgre
 Shows how to parse a dbt manifest file to "explode" the dbt DAG into Airflow
 Each dbt model is run as a bash command.
 
-![dbt_advanced_dag_utility_grid](./images/Utility_grid.png)
+![Utility Grid](./images/Utility_grid.png)
 
 
 ## Notes
@@ -48,5 +48,3 @@ Each dbt model is run as a bash command.
 - If you make changes to the dbt project, you will need to run `dbt compile` in order to update the `manifest.json` file.
 This may be done manually during development, as part of a CI/CD pipeline, or as a separate step in a production pipeline
 run *before* the Airflow DAG is triggered.
-
-[def]: ./images/dbt_advanced_dag_utility_graph.png
