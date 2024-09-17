@@ -85,13 +85,6 @@ class DbtDagParser:
                 f"--target {self.dbt_target} --models {model_name} "
                 f"--profiles-dir {self.dbt_profiles_dir} --project-dir {self.dbt_project_dir}"
             ),
-            env={
-                "DBT_USER": "{{ conn.postgres.login }}",
-                "DBT_ENV_SECRET_PASSWORD": "{{ conn.postgres.password }}",
-                "DBT_HOST": "{{ conn.postgres.host }}",
-                "DBT_SCHEMA": "{{ conn.postgres.schema }}",
-                "DBT_PORT": "{{ conn.postgres.port }}",
-            },
             dag=self.dag,
         )
         # Keeping the log output, it's convenient to see when testing the python code outside of Airflow
