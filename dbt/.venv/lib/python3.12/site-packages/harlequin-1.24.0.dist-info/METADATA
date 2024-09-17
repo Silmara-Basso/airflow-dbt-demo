@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: harlequin
+Version: 1.24.0
+Summary: The SQL IDE for Your Terminal.
+Home-page: https://harlequin.sh
+License: MIT
+Author: Ted Conbeer
+Author-email: tconbeer@users.noreply.github.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: adbc
+Provides-Extra: bigquery
+Provides-Extra: cassandra
+Provides-Extra: databricks
+Provides-Extra: mysql
+Provides-Extra: nebulagraph
+Provides-Extra: odbc
+Provides-Extra: postgres
+Provides-Extra: s3
+Provides-Extra: trino
+Requires-Dist: boto3 (>=1.34.22,<2.0.0) ; extra == "s3"
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: duckdb (>=0.8.0)
+Requires-Dist: harlequin-adbc (>=0.1) ; (python_full_version >= "3.9.0") and (extra == "adbc")
+Requires-Dist: harlequin-bigquery (>=1.0,<2.0) ; extra == "bigquery"
+Requires-Dist: harlequin-cassandra (>=0.1) ; (python_full_version >= "3.9.0") and (extra == "cassandra")
+Requires-Dist: harlequin-databricks (>=0.3) ; (python_full_version >= "3.9.0") and (extra == "databricks")
+Requires-Dist: harlequin-mysql (>=0.1) ; extra == "mysql"
+Requires-Dist: harlequin-nebulagraph (>=0.1) ; (python_full_version >= "3.9.0") and (extra == "nebulagraph")
+Requires-Dist: harlequin-odbc (>=0.1) ; extra == "odbc"
+Requires-Dist: harlequin-postgres (>=0.3) ; extra == "postgres"
+Requires-Dist: harlequin-trino (>=0.1) ; extra == "trino"
+Requires-Dist: importlib_metadata (>=8.0) ; python_full_version < "3.10.0"
+Requires-Dist: numpy (>=1.21.0,<1.25.0) ; python_full_version >= "3.8.0" and python_full_version < "3.9.0"
+Requires-Dist: numpy (>=1.21.0,<2.0.0) ; python_full_version >= "3.9.0" and python_full_version < "3.12.0"
+Requires-Dist: numpy (>=1.26.0,<2.0.0) ; python_full_version >= "3.12.0" and python_full_version < "3.13.0"
+Requires-Dist: platformdirs (>=3.10,<5.0)
+Requires-Dist: questionary (>=2.0.1,<3.0.0)
+Requires-Dist: rich-click (>=1.7.1,<2.0.0)
+Requires-Dist: shandy-sqlfmt (>=0.19.0)
+Requires-Dist: textual (==0.76.0)
+Requires-Dist: textual-fastdatatable (==0.9.0)
+Requires-Dist: textual-textarea (==0.14.2)
+Requires-Dist: tomlkit (>=0.12.5,<0.14.0)
+Project-URL: Repository, https://github.com/tconbeer/harlequin
+Description-Content-Type: text/markdown
+
+# Harlequin
+
+[![PyPI](https://img.shields.io/pypi/v/harlequin)](https://pypi.org/project/harlequin/)
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/harlequin)
+![Runs on Linux | MacOS | Windows](https://img.shields.io/badge/runs%20on-Linux%20%7C%20MacOS%20%7C%20Windows-blue)
+
+The SQL IDE for Your Terminal.
+
+![Harlequin](./harlequin.svg)
+
+## Installing Harlequin
+
+After installing Python 3.8 or above, install Harlequin using `pip` or `pipx` with:
+
+```bash
+pipx install harlequin
+```
+
+## Using Harlequin with DuckDB
+
+From any shell, to open one or more DuckDB database files:
+
+```bash
+harlequin "path/to/duck.db" "another_duck.db"
+```
+
+To open an in-memory DuckDB session, run Harlequin with no arguments:
+
+```bash
+harlequin
+```
+
+If you want to control the version of DuckDB that Harlequin uses, see the [Troubleshooting](https://harlequin.sh/docs/troubleshooting/duckdb-version-mismatch) page.
+
+## Using Harlequin with SQLite and Other Adapters
+
+Harlequin also ships with a SQLite3 adapter. You can open one or more SQLite database files with:
+
+```bash
+harlequin -a sqlite "path/to/sqlite.db" "another_sqlite.db"
+```
+
+Like DuckDB, you can also open an in-memory database by omitting the paths:
+
+```bash
+harlequin -a sqlite
+```
+
+Other adapters can be installed using `pip install <adapter package>` or `pipx inject harlequin <adapter package>`, depending on how you installed Harlequin. For a list of known adapters provided either by the Harlequin maintainers or the broader community, see the [adapters](https://harlequin.sh/docs/adapters) page in the docs.
+
+## Getting Help
+
+To view all command-line options for Harlequin and all installed adapters, after installation, simply type:
+
+```bash
+harlequin --help
+```
+
+To view a list of all key bindings (keyboard shortcuts) within the app, press <Key>F1</Key>. You can also view this list outside the app [in the docs](https://harlequin.sh/docs/bindings).
+
+COLOR, KEY BINDING, OR COPY-PASTE PROBLEMS? See [Troubleshooting](https://harlequin.sh/docs/troubleshooting/index) in the docs. 
+
+## More info at [harlequin.sh](https://harlequin.sh)
+
+Visit [harlequin.sh](https://harlequin.sh) for an overview of features and full documentation.
+
+## Sponsoring Harlequin
+
+Please consider [sponsoring Harlequin's author](https://github.com/sponsors/tconbeer), so he can continue to dedicate time to Harlequin.
+
+## Contributing
+
+Thanks for your interest in Harlequin! Harlequin is primarily maintained by [Ted Conbeer](https://github.com/tconbeer), but he welcomes all contributions!
+
+Please see [`CONTRIBUTING.md`](./CONTRIBUTING.md) for more information.
+

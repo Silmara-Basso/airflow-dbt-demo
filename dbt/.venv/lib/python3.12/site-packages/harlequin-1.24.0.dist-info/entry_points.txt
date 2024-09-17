@@ -1,0 +1,13 @@
+[console_scripts]
+harlequin=harlequin.cli:harlequin
+
+[harlequin.adapter]
+duckdb=harlequin_duckdb:DuckDbAdapter
+sqlite=harlequin_sqlite:HarlequinSqliteAdapter
+
+[harlequin.keymap]
+vscode=harlequin_vscode:VSCODE
+
+[pygments.styles]
+harlequin=harlequin.colors:HarlequinPygmentsStyle
+
