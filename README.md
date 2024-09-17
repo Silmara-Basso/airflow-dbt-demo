@@ -23,7 +23,9 @@ run *before* the Airflow DAG is triggered.
 Final result after a few attempts
 ![AirFlow Dags](./images/Arflow.png)
 
+
 I used harlequin to view persisted data in Postgre
-'pip install harlequin-postgres'
+`pip install harlequin-postgres`
+
 
 ![Querying Postgre](./images/codigo.png)
